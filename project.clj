@@ -5,7 +5,7 @@
             :url "https://cyverse.org/license"}
   :deploy-repositories [["releases" :clojars]
                         ["snapshots" :clojars]]
-  :dependencies [[org.clojure/clojure "1.11.3"]
+  :dependencies [[org.clojure/clojure "1.12.5"]
                  [cheshire "5.13.0"]
                  [clj-http "3.13.0"]
                  [clj-time "0.15.2"]
@@ -21,6 +21,6 @@
   :profiles {:repl {:source-paths ["src" "repl/src"]
                     :resource-paths ["repl/resources"]}}
   :plugins [[jonase/eastwood "1.4.3"]
-            [lein-ancient "0.7.0"]
-            [lein-cljfmt "0.9.2"]
+            [lein-ancient "1.0.0"]
+            [dev.weavejester/lein-cljfmt "0.16.4"]
             [test2junit "1.4.4"]])
